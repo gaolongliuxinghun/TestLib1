@@ -11,7 +11,7 @@ public class T {
     public static void show(Context context,String string){
         Student student = new Student(string,3);
         Gson gson = new GsonBuilder().create();
-        String s = gson.toJson(student);
+        String s = gson.toJson(student)+" 版本2.0.0";
 
         Toast.makeText(context, s, Toast.LENGTH_SHORT).show();
     }
